@@ -23,7 +23,7 @@ for each in nums:
     count_1 -= 1
     count_2 -= 1
     
-    if nums.count(major_1) > len(nums) / 3:
-        print(major_1)
-    if nums.count(major_2) > len(nums) / 3:
-        print(major_2)
+if nums.count(major_1) > len(nums) / 3:
+    print(major_1)
+if nums.count(major_2) > len(nums) / 3:
+    print(major_2)
