@@ -1,0 +1,16 @@
+import requests
+import time
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36'
+}
+url = "https://bbs.white-plus.net/ck.php?nowtime={}"
+now = int(round(time.time())*1000)
+print(now)
+
+res = requests.get(url.format(now), headers=headers)
+print(res.status_code)
+print(res.content)
+
+with open('a.jpg', 'wb') as f:
+    f.write(res.content)
