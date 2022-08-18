@@ -1,6 +1,7 @@
 import timeit
 
-t_speed = timeit.repeat('t = (1, 2, 3, 4, 5)', repeat=1000)
+# timeit.timeit
+t_speed = timeit.repeat('t = (1, 2, 3, 4, 5)', repeat=1000) # 默认执行1000000次
 l_speed = timeit.repeat('l = [1, 2, 3, 4, 5]', repeat=1000)
 
 # 统计生成元组的平均速度
